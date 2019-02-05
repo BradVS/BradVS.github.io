@@ -12,13 +12,15 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 16px; }
 
 section {
-  padding-top: 12vh; }
+  padding-top: 11vh;
+  height: 100%; }
 
 header {
   text-align: center;
   width: 100%;
   height: 10vh;
-  position: fixed; }
+  position: fixed;
+  background-color: #f1f2f3; }
   header nav {
     background-color: antiquewhite;
     display: -webkit-box;
@@ -32,3 +34,27 @@ header {
       text-decoration: none; }
       header nav a:hover {
         background-color: aquamarine; }
+
+#home {
+  text-align: center; }
+  #home .home__text {
+    margin-top: 10%; }
+    #home .home__text h1 {
+      font-size: 36px; }
+
+#about .about__area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%; }
+  #about .about__area .about__text {
+    width: 70vw;
+    height: 100%;
+    padding: 40px 40px; }
+    #about .about__area .about__text a {
+      color: black;
+      text-decoration: none;
+      margin-bottom: 16px; }
+  #about .about__area .about__img {
+    width: 30vw; }
