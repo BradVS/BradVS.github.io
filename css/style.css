@@ -42,19 +42,36 @@ header {
     #home .home__text h1 {
       font-size: 36px; }
 
-#about .about__area {
+#about {
+  background-color: #f1f2f3; }
+  #about .about__area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 10px; }
+    #about .about__area .about__text {
+      width: 70vw;
+      height: 100%;
+      background-color: white;
+      padding: 40px 40px; }
+      #about .about__area .about__text a {
+        color: black;
+        text-decoration: none;
+        margin-bottom: 16px; }
+    #about .about__area .about__img {
+      width: 30vw; }
+
+#contact .contactForm form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 100%; }
-  #about .about__area .about__text {
-    width: 70vw;
-    height: 100%;
-    padding: 40px 40px; }
-    #about .about__area .about__text a {
-      color: black;
-      text-decoration: none;
-      margin-bottom: 16px; }
-  #about .about__area .about__img {
-    width: 30vw; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  #contact .contactForm form input {
+    width: 30vw;
+    height: 5vh;
+    margin-bottom: 5px; }

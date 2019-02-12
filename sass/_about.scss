@@ -1,14 +1,16 @@
 #about{
+    background-color: #f1f2f3;
 
     .about__area{
         display: flex;
         width: 100%;
         height: 100%;
+        padding: 10px;
 
         .about__text{
             width: 70vw;
             height: 100%;
-            // background-color: aqua;
+            background-color: white;
             padding: 40px 40px;
 
             a{
