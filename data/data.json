@@ -1,0 +1,10 @@
+{
+    "projects": [
+        {
+            "name": "Example Name",
+            "description": "Consequat dolor irure laboris ipsum irure deserunt reprehenderit reprehenderit eu nulla sunt incididunt elit duis. Amet sint minim sit fugiat. Voluptate enim voluptate laboris duis. Voluptate do excepteur magna est incididunt excepteur fugiat quis. Qui mollit sunt quis elit nostrud cupidatat dolor adipisicing pariatur ipsum.",
+            "img": "./images/fake.jpg",
+            "link": "notlink.html"
+        }
+    ]
+}

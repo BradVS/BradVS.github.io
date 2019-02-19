@@ -1,10 +1,11 @@
+//object for portfolio data/functions
 const portfolio = {
     popup: document.getElementById("portfolioPopup"),
     popupAreas: {
         name: document.getElementById("popup__title"),
         descript: document.getElementById("popup__descript"),
         img: document.getElementById("popup__img"),
-        link: document.getElementById("popup__img")
+        link: document.getElementById("popup__link")
     },
     projects: [
         {

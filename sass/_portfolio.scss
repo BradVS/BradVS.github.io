@@ -1,0 +1,54 @@
+#portfolio{
+
+    .thumbnail{
+        width: 150px;
+        height: 100px;
+        background-color: black;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        .thumbnail__title{
+            color: white;
+            bottom: 1px;
+        }
+    }
+
+}
+
+#portfolioPopup{
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .popupArea{
+        background-color: white;
+        height: 80%;
+        width: 75%;
+        margin: 5% auto;
+        padding: 20px;
+        display: flex;
+
+        .popup__text{
+            width: 65%;
+
+            #popup__link{
+                background-color: grey;
+                text-decoration: none;
+                color: white;
+                padding: 5px;
+
+                &:hover{
+                    background-color: darkgrey;
+                }
+            }
+        }
+
+        .popup__img{
+            width: 35%;
+        }
+    }
+}

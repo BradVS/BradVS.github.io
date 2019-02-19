@@ -26,7 +26,9 @@ header nav a:hover { background-color: aquamarine; }
 
 #about .about__area .about__text { width: 70vw; height: 100%; background-color: white; padding: 40px 40px; }
 
-#about .about__area .about__text a { color: black; text-decoration: none; margin-bottom: 16px; }
+#about .about__area .about__text a { color: black; text-decoration: none; margin-bottom: 24px; }
+
+#about .about__area .about__text a:hover { text-decoration: underline; }
 
 #about .about__area .about__img { width: 30vw; }
 
@@ -34,12 +36,20 @@ header nav a:hover { background-color: aquamarine; }
 
 #contact .contactForm form input { width: 30vw; height: 5vh; margin-bottom: 5px; }
 
-#portfolio .thumbnail { width: 50px; height: 50px; background-color: black; }
+#portfolio .thumbnail { width: 150px; height: 100px; background-color: black; }
+
+#portfolio .thumbnail:hover { cursor: pointer; }
+
+#portfolio .thumbnail .thumbnail__title { color: white; bottom: 1px; }
 
 #portfolioPopup { display: none; position: absolute; height: 100vh; width: 100%; background-color: rgba(0, 0, 0, 0.7); }
 
 #portfolioPopup .popupArea { background-color: white; height: 80%; width: 75%; margin: 5% auto; padding: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 #portfolioPopup .popupArea .popup__text { width: 65%; }
+
+#portfolioPopup .popupArea .popup__text #popup__link { background-color: grey; text-decoration: none; color: white; padding: 5px; }
+
+#portfolioPopup .popupArea .popup__text #popup__link:hover { background-color: darkgrey; }
 
 #portfolioPopup .popupArea .popup__img { width: 35%; }
