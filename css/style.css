@@ -40,6 +40,6 @@ header nav a:hover { background-color: aquamarine; }
 
 #portfolioPopup .popupArea { background-color: white; height: 80%; width: 75%; margin: 5% auto; padding: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-#portfolioPopup .popupArea .popup__text { width: 70%; }
+#portfolioPopup .popupArea .popup__text { width: 65%; }
 
-#portfolioPopup .popupArea .popup__img { width: 30%; }
+#portfolioPopup .popupArea .popup__img { width: 35%; }

@@ -58,25 +58,26 @@
         </div>
     </section>
 
-    <section id="portfolio">
-        <h2>My Portfolio</h2>
-        <div onclick="portfolio.displayPopup()" class="thumbnail">
-            <h4 class="thumbnail__title"></h4>
-        </div>
-    </section>
-
     <div id="portfolioPopup">
         <div class="popupArea">
             <div class="popup__text">
                 <h3 id="popup__title"></h3>
                 <p id="popup__descript"></p>
-                <a href="" id="popup__link"></a>
+                <a href="" target="_blank" id="popup__link">Project Link</a>
+                <button onclick="portfolio.hidePopup()">Close</button>
             </div>
             <div class="popup__img">
                 <img id="popup__img" src="" alt="Project Image">
             </div>
         </div>
     </div>
+
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        <div onclick="portfolio.displayPopup(0)" class="thumbnail">
+            <h4 class="thumbnail__title"></h4>
+        </div>
+    </section>
 
     <script src="./app/main.js" defer></script>
 </body>
