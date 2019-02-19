@@ -1,77 +1,45 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+* { margin: 0; padding: 0; font-family: sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-html, body {
-  height: 100%; }
+html, body { height: 100%; }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin-bottom: 16px; }
+h1, h2, h3, h4, h5, h6, p { margin-bottom: 16px; }
 
-section {
-  padding-top: 11vh;
-  height: 100%; }
+section { padding: 40px; padding-top: 12vh; height: 100%; }
 
-header {
-  text-align: center;
-  width: 100%;
-  height: 10vh;
-  position: fixed;
-  background-color: #f1f2f3; }
-  header nav {
-    background-color: antiquewhite;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    height: 45%; }
-    header nav a {
-      text-decoration: none; }
-      header nav a:hover {
-        background-color: aquamarine; }
+header { text-align: center; width: 100%; height: 10vh; position: fixed; background-color: #f1f2f3; }
 
-#home {
-  text-align: center; }
-  #home .home__text {
-    margin-top: 10%; }
-    #home .home__text h1 {
-      font-size: 36px; }
+header nav { background-color: antiquewhite; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; height: 45%; }
 
-#about {
-  background-color: #f1f2f3; }
-  #about .about__area {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding: 10px; }
-    #about .about__area .about__text {
-      width: 70vw;
-      height: 100%;
-      background-color: white;
-      padding: 40px 40px; }
-      #about .about__area .about__text a {
-        color: black;
-        text-decoration: none;
-        margin-bottom: 16px; }
-    #about .about__area .about__img {
-      width: 30vw; }
+header nav a { color: black; text-decoration: none; }
 
-#contact .contactForm form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-  #contact .contactForm form input {
-    width: 30vw;
-    height: 5vh;
-    margin-bottom: 5px; }
+header nav a:hover { background-color: aquamarine; }
+
+#home { text-align: center; }
+
+#home .home__text { margin-top: 10%; }
+
+#home .home__text h1 { font-size: 36px; }
+
+#about { background-color: #f1f2f3; }
+
+#about .about__area { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; height: 100%; padding: 10px; }
+
+#about .about__area .about__text { width: 70vw; height: 100%; background-color: white; padding: 40px 40px; }
+
+#about .about__area .about__text a { color: black; text-decoration: none; margin-bottom: 16px; }
+
+#about .about__area .about__img { width: 30vw; }
+
+#contact .contactForm form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+#contact .contactForm form input { width: 30vw; height: 5vh; margin-bottom: 5px; }
+
+#portfolio .thumbnail { width: 50px; height: 50px; background-color: black; }
+
+#portfolioPopup { display: none; position: absolute; height: 100vh; width: 100%; background-color: rgba(0, 0, 0, 0.7); }
+
+#portfolioPopup .popupArea { background-color: white; height: 80%; width: 75%; margin: 5% auto; padding: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+#portfolioPopup .popupArea .popup__text { width: 70%; }
+
+#portfolioPopup .popupArea .popup__img { width: 30%; }
