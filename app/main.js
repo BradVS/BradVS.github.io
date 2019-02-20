@@ -9,10 +9,10 @@ const portfolio = {
     },
     projects: [
         {
-            name: "Example Name",
-            description: "Consequat dolor irure laboris ipsum irure deserunt reprehenderit reprehenderit eu nulla sunt incididunt elit duis. Amet sint minim sit fugiat. Voluptate enim voluptate laboris duis. Voluptate do excepteur magna est incididunt excepteur fugiat quis. Qui mollit sunt quis elit nostrud cupidatat dolor adipisicing pariatur ipsum.",
-            img: "./images/fake.jpg",
-            link: "notlink.html"
+            name: "Color Picker",
+            description: "This was a small React web app that I created for a class assignment. The idea behind it was to select a color, and then choose a color harmony, and then the screen would show the color and the color harmony associated with it that the user chose.",
+            img: "./images/colorPicker.png",
+            link: "https://codesandbox.io/embed/7y1qx49xl6?view=preview"
         }
     ],
     displayPopup(input){
