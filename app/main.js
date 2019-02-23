@@ -1,5 +1,5 @@
 let thumbnails = document.querySelectorAll(".thumbnail");
-const thumbpics = ['./images/colorPicker.PNG'];
+const thumbpics = ['./images/colorPicker.png'];
 
 //object for portfolio data/functions
 const portfolio = {
@@ -14,7 +14,7 @@ const portfolio = {
         {
             name: "Color Picker",
             description: "This was a small React web app that I created for a class assignment. The idea behind it was to select a color, and then choose a color harmony, and then the screen would show the color and the color harmony associated with it that the user chose.",
-            img: "./images/colorPicker.PNG",
+            img: "./images/colorPicker.png",
             link: "https://codesandbox.io/embed/7y1qx49xl6?view=preview"
         }
     ],
