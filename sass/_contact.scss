@@ -11,6 +11,12 @@
                 height: 5vh;
                 margin-bottom: 5px;
             }
+
+            @media only screen and (max-width: 960px){
+                input{
+                    width: 80%;
+                }
+            }
         }
     }
 }

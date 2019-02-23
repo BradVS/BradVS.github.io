@@ -4,12 +4,21 @@
         width: 150px;
         height: 100px;
         background-color: black;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
 
         &:hover{
             cursor: pointer;
+
+            .thumbnail__title{
+                height: 100%;
+            }
         }
 
         .thumbnail__title{
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 5px 2px;
             color: white;
             bottom: 1px;
         }
@@ -52,6 +61,21 @@
 
             img{
                 max-width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 960px){
+            width: 90%;
+            min-height: 90%;
+            flex-direction: column-reverse;
+
+            .popup__text{
+                width: 100%;
+            }
+
+            .popup__img{
+                width: 100%;
+                max-height: 100%;
             }
         }
     }

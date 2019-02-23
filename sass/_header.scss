@@ -6,17 +6,18 @@ header{
     background-color: #f1f2f3;
 
     nav{
-        background-color: antiquewhite;
+        background-color: grey;
         display: flex;
         justify-content: space-evenly;
         height: 45%;
 
         a{
-            color: black;
+            padding: 6px 20px;
+            color: white;
             text-decoration: none;
 
             &:hover{
-                background-color: aquamarine;
+                background-color: darkgrey;
             }
         }
     }

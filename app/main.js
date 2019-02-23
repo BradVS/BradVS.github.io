@@ -1,3 +1,6 @@
+let thumbnails = document.querySelectorAll(".thumbnail");
+let thumbpics = ['./images/colorPicker.png'];
+
 //object for portfolio data/functions
 const portfolio = {
     popup: document.getElementById("portfolioPopup"),
@@ -25,4 +28,9 @@ const portfolio = {
     hidePopup(){
         this.popup.style.display = "none";
     }
+}
+
+for (let i = 0; i < thumbnails.length; i++) {
+    thumbnails[i].style.backgroundImage = `url(${thumbpics[i]})`;
+    
 }

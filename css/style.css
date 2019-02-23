@@ -29,7 +29,7 @@ header {
 }
 
 header nav {
-  background-color: antiquewhite;
+  background-color: grey;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,12 +40,13 @@ header nav {
 }
 
 header nav a {
-  color: black;
+  padding: 6px 20px;
+  color: white;
   text-decoration: none;
 }
 
 header nav a:hover {
-  background-color: aquamarine;
+  background-color: darkgrey;
 }
 
 #home {
@@ -110,17 +111,32 @@ header nav a:hover {
   margin-bottom: 5px;
 }
 
+@media only screen and (max-width: 960px) {
+  #contact .contactForm form input {
+    width: 80%;
+  }
+}
+
 #portfolio .thumbnail {
   width: 150px;
   height: 100px;
   background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #portfolio .thumbnail:hover {
   cursor: pointer;
 }
 
+#portfolio .thumbnail:hover .thumbnail__title {
+  height: 100%;
+}
+
 #portfolio .thumbnail .thumbnail__title {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 2px;
   color: white;
   bottom: 1px;
 }
@@ -165,6 +181,24 @@ header nav a:hover {
 
 #portfolioPopup .popupArea .popup__img img {
   max-width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+  #portfolioPopup .popupArea {
+    width: 90%;
+    min-height: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  #portfolioPopup .popupArea .popup__text {
+    width: 100%;
+  }
+  #portfolioPopup .popupArea .popup__img {
+    width: 100%;
+    max-height: 100%;
+  }
 }
 
 footer {
