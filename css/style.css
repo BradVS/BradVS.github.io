@@ -132,6 +132,7 @@ header nav a:hover {
 
 #portfolio .thumbnail:hover .thumbnail__title {
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #portfolio .thumbnail .thumbnail__title {
