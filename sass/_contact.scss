@@ -5,6 +5,8 @@
         form{
             display: flex;
             flex-direction: column;
+            border: black 1px solid;
+            padding: 20px 30px;
 
             input{
                 width: 30vw;
@@ -16,6 +18,7 @@
             textarea{
                 font-size: 16px;
                 margin-bottom: 16px;
+                padding: 10px;
             }
 
             .submitButton{
