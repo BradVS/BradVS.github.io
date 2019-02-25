@@ -12,6 +12,7 @@
             height: 100%;
             background-color: white;
             padding: 40px 40px;
+            line-height: 1.4;
 
             a{
                 color: black;
@@ -26,6 +27,12 @@
 
         .about__img{
             width: 30vw;
+            height: 100%;
+
+            img{
+                max-width: 100%;
+                height: 100%;
+            }
         }
     }
 }
