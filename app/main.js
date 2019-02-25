@@ -1,5 +1,5 @@
 let thumbnails = document.querySelectorAll(".thumbnail");
-const thumbpics = ['./images/colorPicker.PNG', './images/interactMap.PNG'];
+const thumbpics = ['./images/colorPicker.PNG', './images/interactMap.PNG', './images/conceptCafe.PNG'];
 
 //object for portfolio data/functions
 const portfolio = {
@@ -22,6 +22,12 @@ const portfolio = {
             description: "This was a small React project I made for a class assignment. The project entailed using JSON information and having data transfer and communicate between three different React components. The basic functionality is this: a user can click on a name on the side menu to single out that spot on the map, the user can select a tag on the right in order to single out locations that fit that tag, or users can pick a name on the map in order to see more details about that location.",
             img: "./images/interactMap.PNG",
             link: "https://codesandbox.io/embed/mzw1k5ql89?fontsize=14&view=preview"
+        },
+        {
+            name: "Concept Cafe",
+            description: "This was a small React project I made for a class assignment. The project entailed using JSON information and having data transfer and communicate between three different React components. The basic functionality is this: a user can click on a name on the side menu to single out that spot on the map, the user can select a tag on the right in order to single out locations that fit that tag, or users can pick a name on the map in order to see more details about that location.",
+            img: "./images/conceptCafe.PNG",
+            link: "https://codesandbox.io/embed/9o6ovy93vo?fontsize=14&view=preview"
         }
     ],
     displayPopup(input){

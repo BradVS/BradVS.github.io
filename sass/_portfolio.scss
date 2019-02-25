@@ -1,8 +1,10 @@
 #portfolio{
-    
+    background-color: #f1f2f3;
 
     .thumbnailArea{
+        padding: 20px;
         display: flex;
+        background-color: white;
 
         .thumbnail{
             width: 240px;
@@ -53,6 +55,7 @@
             #popup__descript{
                 line-height: 1.5;
                 width: 90%;
+                padding-left: 20px;
             }
 
             #popup__link{
@@ -63,6 +66,19 @@
 
                 &:hover{
                     background-color: darkgrey;
+                }
+            }
+
+            button{
+                border: none;
+                background-color: grey;
+                color: white;
+                padding: 5px;
+                font-size: 16px;
+
+                &:hover{
+                    background-color: darkgrey;
+                    cursor: pointer;
                 }
             }
         }
