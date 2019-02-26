@@ -70,12 +70,3 @@ window.addEventListener("scroll", function() {
         portfolioArea.style.WebkitAnimationName = "portfolioSlideIn";
     }
   });
-
-//   let elementTarget = document.getElementById("home");
-//   let aboutText = document.querySelector(".text__holder");
-
-//   if(window.screenY >= elementTarget.offsetTop){
-//     aboutText.style.animationName = "introFrames";
-//     aboutText.style.WebkitAnimationName = "introFrames";
-//     scrolledOnce = true;
-// }
