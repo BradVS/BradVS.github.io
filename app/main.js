@@ -32,13 +32,16 @@ const portfolio = {
     ],
     displayPopup(input){
         this.popup.style.display = "block";
+        // this.popup.classList.add("startClass");
         this.popupAreas.name.innerHTML = this.projects[input].name;
+        this.popupAreas.descript.classList.add("startClass");
         this.popupAreas.descript.innerHTML = this.projects[input].description;
         this.popupAreas.img.src = this.projects[input].img;
         this.popupAreas.link.href = this.projects[input].link;
     },
     hidePopup(){
         this.popup.style.display = "none";
+        this.popup.classList.remove("startClass");
     }
 }
 

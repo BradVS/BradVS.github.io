@@ -47,7 +47,7 @@
     <section id="about">
         <div class="about__area">
             <div class="about__text">
-                <h3>About Me</h3>
+                <h2>About Me</h2>
                 <p>
                     I am an aspiring web developer and programmer that is currently attending IUPUI. 
                     My degree is Media Arts and Science with a focus in Web Development and Design, along with a minor 
@@ -78,12 +78,19 @@
     <section id="contact">
         <div class="contactForm">
             <h3>Contact Form</h3>
-            <form action="">
+            <!-- <form action="">
                 <input type="text" placeholder="Name:">
                 <input type="text" placeholder="Email:">
                 <input type="text" placeholder="Phone:">
                 <textarea name="" id="" cols="50" rows="10" placeholder="Message:"></textarea>
                 <input class="submitButton" type="submit">
+            </form> -->
+            <form method="POST" action="https://formspree.io/1dxac0fl1k16@opayq.com">
+                <input type="text" name="name" placeholder="Name:">
+                <input type="email" name="email" placeholder="Email:">
+                <input type="text" name="phone" placeholder="Phone:">
+                <textarea cols="50" rows="10" name="message" placeholder="Message: "></textarea>
+                <button class="submitButton" type="submit">Submit</button>
             </form>
         </div>
     </section>
