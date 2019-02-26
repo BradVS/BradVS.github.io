@@ -1,5 +1,6 @@
 let thumbnails = document.querySelectorAll(".thumbnail");
 const thumbpics = ['./images/colorPicker.PNG', './images/interactMap.PNG', './images/conceptCafe.PNG'];
+let scrolledOnce = false;
 
 //object for portfolio data/functions
 const portfolio = {
@@ -49,3 +50,32 @@ for (let i = 0; i < thumbnails.length; i++) {
     thumbnails[i].style.backgroundImage = `url(${thumbpics[i]})`;
     
 }
+
+window.addEventListener("scroll", function() {
+    let elementTarget = document.getElementById("home");
+    let portfolioTarget = document.getElementById("contact");
+    let aboutText = document.querySelector(".text__holder");
+    let portfolioArea = document.querySelector(".thumbnailArea");
+    
+    if (window.scrollY > (elementTarget.offsetTop + (elementTarget.offsetHeight / 5)) && scrolledOnce === false) {
+        // alert("You've scrolled past the second div");
+        console.log("You've scrolled past the second div");
+        aboutText.style.animationName = "introFrames";
+        aboutText.style.WebkitAnimationName = "introFrames";
+        scrolledOnce = true;
+    }
+
+    if(window.scrollY > (portfolioTarget.offsetTop + (elementTarget.offsetHeight / 5))){
+        portfolioArea.style.animationName = "portfolioSlideIn";
+        portfolioArea.style.WebkitAnimationName = "portfolioSlideIn";
+    }
+  });
+
+//   let elementTarget = document.getElementById("home");
+//   let aboutText = document.querySelector(".text__holder");
+
+//   if(window.screenY >= elementTarget.offsetTop){
+//     aboutText.style.animationName = "introFrames";
+//     aboutText.style.WebkitAnimationName = "introFrames";
+//     scrolledOnce = true;
+// }

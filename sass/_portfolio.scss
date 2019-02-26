@@ -2,9 +2,12 @@
     background-color: #f1f2f3;
 
     .thumbnailArea{
+        position: relative;
         padding: 20px;
         display: flex;
         background-color: white;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
 
         .thumbnail{
             width: 240px;
@@ -130,6 +133,16 @@
 
     to{
         opacity: 1;
+        left: 0px;
+    }
+}
+
+@keyframes portfolioSlideIn{
+    from{
+        left: 500px;
+    }
+
+    to{
         left: 0px;
     }
 }
