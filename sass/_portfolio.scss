@@ -3,15 +3,17 @@
 
     .thumbnailArea{
         position: relative;
-        padding: 20px;
+        padding: 10vh 5vw;
         display: flex;
+        justify-content: space-around;
+        align-items: center;
         background-color: white;
         animation-duration: 2s;
         animation-fill-mode: forwards;
 
         .thumbnail{
-            width: 240px;
-            height: 120px;
+            width: 30vw;
+            height: 28vh;
             margin-left: 20px;
             background-color: black;
             background-position: center;
@@ -131,27 +133,5 @@
                 max-height: 100%;
             }
         }
-    }
-}
-
-@keyframes popupAnim{
-    from{
-        opacity: 0;
-        left: 150px;
-    }
-
-    to{
-        opacity: 1;
-        left: 0px;
-    }
-}
-
-@keyframes portfolioSlideIn{
-    from{
-        left: 500px;
-    }
-
-    to{
-        left: 0px;
     }
 }

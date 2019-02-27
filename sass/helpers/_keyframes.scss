@@ -1,0 +1,52 @@
+
+@keyframes introFrames {
+    from{
+        opacity: 0;
+        top: 200px;
+    }
+
+    to{
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@keyframes popupAnim{
+    from{
+        opacity: 0;
+        left: 150px;
+    }
+
+    to{
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+@keyframes portfolioSlideIn{
+    from{
+        left: 500px;
+    }
+
+    to{
+        left: 0px;
+    }
+}
+
+@keyframes fromLeft{
+    from{
+        right: 600px;
+    }
+    to{
+        right: 0px;
+    }
+}
+
+@keyframes fromRight{
+    from{
+        left: 600px;
+    }
+    to{
+        left: 0px;
+    }
+}

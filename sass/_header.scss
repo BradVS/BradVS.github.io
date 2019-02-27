@@ -6,10 +6,37 @@ header{
     background-color: #f1f2f3;
     z-index: 99;
 
+    .nameBox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .left{
+            position: relative;
+            font-style: italic;
+            animation-name: fromLeft;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .center{
+
+        }
+
+        .right{
+            position: relative;
+            font-style: italic;
+            animation-name: fromRight;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+    }
+
     nav{
         background-color: grey;
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
         height: 45%;
 
         a{
@@ -19,6 +46,19 @@ header{
 
             &:hover{
                 background-color: darkgrey;
+            }
+        }
+
+        .socialLinks{
+            
+
+            a{
+                font-size: 24px;
+                padding: 0px 20px;
+
+                &:hover{
+                    background-color: grey;
+                }
             }
         }
     }

@@ -1,3 +1,7 @@
+// Helpers for stylesheets
+@import './helpers/keyframes';
+
+// Stylesheets to combine into one
 @import './structure';
 @import './header';
 @import './home';
