@@ -1,5 +1,5 @@
 #portfolio{
-    background-color: #f1f2f3;
+    background-color: $offWhite;
 
     .thumbnailArea{
         position: relative;
@@ -69,7 +69,7 @@
             #popup__title{
                 position: relative;
                 font-size: 30px;
-                background-color: #f1f2f3;
+                background-color: $offWhite;
                 padding: 8px;
             }
 
