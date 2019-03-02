@@ -103,6 +103,22 @@
                     cursor: pointer;
                 }
             }
+
+            .close{
+                font-size: 30px;
+                position: absolute;
+                bottom: 22%;
+                right: 14%;
+
+                &:hover{
+                    color: grey;
+                    cursor: pointer;
+                }
+
+                &:active{
+                    color: black;
+                }
+            }
         }
 
         .startClass{

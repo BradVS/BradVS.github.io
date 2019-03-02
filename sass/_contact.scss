@@ -2,11 +2,17 @@
 
     .contactForm{
 
+        h3{
+            margin-left: 10%;
+        }
+
         form{
             display: flex;
             flex-direction: column;
             border: black 1px solid;
             padding: 20px 30px;
+            width: 75%;
+            margin: auto;
 
             input{
                 width: 30vw;
@@ -37,6 +43,8 @@
             }
 
             @media only screen and (max-width: 960px){
+                width: 100%;
+
                 input{
                     width: 80%;
                 }

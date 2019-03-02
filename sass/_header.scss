@@ -1,7 +1,7 @@
 header{
     text-align: center;
     width: 100%;
-    height: 10vh;
+    min-height: 10vh;
     position: fixed;
     background-color: $offWhite;
     z-index: 99;
@@ -17,10 +17,6 @@ header{
             animation-name: fromLeft;
             animation-duration: 2s;
             animation-fill-mode: forwards;
-        }
-
-        .center{
-
         }
 
         .right{
@@ -58,6 +54,11 @@ header{
 
                 &:hover{
                     background-color: grey;
+                    color: #dddddd;
+                }
+
+                &:active{
+                    color: black;
                 }
             }
         }
