@@ -24,7 +24,14 @@
                 cursor: pointer;
     
                 .thumbnail__title{
-                    height: 100%;
+                    height: 20%;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    margin-bottom: 0px;
+                }
+
+                .thumbnail__descript{
+                    height: 80%;
+                    display: block;
                     background-color: rgba(0, 0, 0, 0.8);
                 }
             }
@@ -34,6 +41,12 @@
                 padding: 5px 2px;
                 color: white;
                 bottom: 1px;
+            }
+
+            .thumbnail__descript{
+                padding: 10px;
+                color: white;
+                display: none;
             }
         }
         @media only screen and (max-width: 760px){
