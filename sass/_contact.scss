@@ -18,13 +18,16 @@
                 width: 30vw;
                 height: 5vh;
                 margin-bottom: 5px;
+                padding: 20px 10px;
                 font-size: 16px;
+                font-family: 'Lato', sans-serif;
             }
 
             textarea{
                 font-size: 16px;
                 margin-bottom: 16px;
                 padding: 10px;
+                font-family: 'Lato', sans-serif;
             }
 
             .submitButton{
@@ -34,6 +37,7 @@
                 border: none;
                 background-color: lightgrey;
                 font-size: 20px;
+                font-family: 'Lato', sans-serif;
 
                 &:hover{
                     color: white;

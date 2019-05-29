@@ -33,6 +33,7 @@
                     height: 80%;
                     display: block;
                     background-color: rgba(0, 0, 0, 0.8);
+                    font-family: 'Lato', sans-serif;
                 }
             }
     
@@ -91,6 +92,7 @@
                 line-height: 1.5;
                 width: 90%;
                 padding-left: 20px;
+                font-family: 'Lato', sans-serif;
             }
 
             #popup__link{
@@ -98,6 +100,7 @@
                 text-decoration: none;
                 color: white;
                 padding: 5px;
+                font-family: 'Lato', sans-serif;
 
                 &:hover{
                     background-color: darkgrey;
