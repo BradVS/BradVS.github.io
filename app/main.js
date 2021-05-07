@@ -58,8 +58,6 @@ window.addEventListener("scroll", function() {
     let portfolioArea = document.querySelector(".thumbnailArea");
     
     if (window.scrollY > (elementTarget.offsetTop + (elementTarget.offsetHeight / 5)) && scrolledOnce === false) {
-        // alert("You've scrolled past the second div");
-        // console.log("You've scrolled past the second div");
         aboutText.style.animationName = "introFrames";
         aboutText.style.WebkitAnimationName = "introFrames";
         scrolledOnce = true;
