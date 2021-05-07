@@ -46,10 +46,10 @@ const portfolio = {
     }
 }
 
-for (let i = 0; i < thumbnails.length; i++) {
-    thumbnails[i].style.backgroundImage = `url(${thumbpics[i]})`;
+// for (let i = 0; i < thumbnails.length; i++) {
+//     thumbnails[i].style.backgroundImage = `url(${thumbpics[i]})`;
     
-}
+// }
 
 window.addEventListener("scroll", function() {
     let elementTarget = document.getElementById("home");
@@ -68,3 +68,22 @@ window.addEventListener("scroll", function() {
         portfolioArea.style.WebkitAnimationName = "portfolioSlideIn";
     }
   });
+
+var portfolioArea = document.querySelector(".thumbnailArea");
+for (let i = 0; i < portfolio.projects.length; i++){
+    let thumbnailTitle = document.createElement("h4");
+    thumbnailTitle.className = "thumbnail__title"
+    thumbnailTitle.innerHTML = portfolio.projects[i].name;
+    let thumbnailDescript = document.createElement("p");
+    thumbnailDescript.className = "thumbnail__descript";
+    thumbnailDescript.innerHTML = portfolio.projects[i].description;
+    let portfolioPiece = document.createElement("div");
+    portfolioPiece.className = "thumbnail";
+    portfolioPiece.onclick = ()=>{
+        portfolio.displayPopup(i)
+    }
+    portfolioPiece.style.backgroundImage = `url(${thumbpics[i]})`;
+    portfolioPiece.appendChild(thumbnailTitle);
+    portfolioPiece.appendChild(thumbnailDescript);
+    portfolioArea.appendChild(portfolioPiece)
+}
