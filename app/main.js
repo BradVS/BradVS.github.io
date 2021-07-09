@@ -1,5 +1,4 @@
 let thumbnails = document.querySelectorAll(".thumbnail");
-const thumbpics = ['./images/colorPicker.PNG', './images/interactMap.PNG', './images/conceptCafe.PNG'];
 let scrolledOnce = false;
 
 //object for portfolio data/functions
@@ -29,6 +28,24 @@ const portfolio = {
             description: "This was a small React project I made for a class assignment. The project entailed using JSON information and having data transfer and communicate between three different React components, with the main component handling all communication. The basic functionality is this, the user can submit their order by selecting one of three different items on the menu, the barista component will respond by stating the price, and sending info to the machine component. The machine component will then use the information, state it is brewing, and display a loading bar. Once completed, the machine will tell the barista it is finished, and the barista will then display a final message.",
             img: "./images/conceptCafe.PNG",
             link: "https://codesandbox.io/embed/9o6ovy93vo?fontsize=14&view=preview"
+        },
+        {
+            name: "Jungle Cook",
+            description: "This was a website that I made as a class project at IUPUI. The project entailed taking the designs given to us, and implementing them, along with creating a CRUD system using Google's Firebase. Users could log in, create an account, view recipes, edit recipes, and create their own recipes to add to the site.",
+            img: "./images/jungleCook.PNG",
+            link: ""
+        },
+        {
+            name: "DVD Rental Site",
+            description: "This unnamed website was a group project that I had create as part of a group for a class project at IUPUI. The project entailed created a Model-View-Controller (MVC) structured website in PHP that could perform CRUD functionality. Users could create an account, browse through DVDs, look at individual DVDs, and perform rental actions if a DVD was in stock. There were separate functionalities for admin accounts that were blocked to regular users.",
+            img: "./images/dvdRental.PNG",
+            link: ""
+        },
+        {
+            name: "Dodger",
+            description: "This Python project was a group project that I had created as a part of a class at Indiana University, Bloomington. The game is a simple, arcade style coin collector, where the player must avoid falling hazards as they try to collect as many coins as possible and achieve a high score.",
+            img: "./images/dodger.PNG",
+            link: ""
         }
     ],
     displayPopup(input){
@@ -38,7 +55,13 @@ const portfolio = {
         this.popupAreas.descript.classList.add("startClass");
         this.popupAreas.descript.innerHTML = this.projects[input].description;
         this.popupAreas.img.src = this.projects[input].img;
-        this.popupAreas.link.href = this.projects[input].link;
+        if(this.projects[input].link === ""){
+            this.popupAreas.link.style.display = "none";
+        }else{
+            this.popupAreas.link.style.display = "inline";
+            this.popupAreas.link.href = this.projects[input].link;
+        }
+        
     },
     hidePopup(){
         this.popup.style.display = "none";
@@ -82,7 +105,7 @@ for (let i = 0; i < portfolio.projects.length; i++){
     portfolioPiece.onclick = ()=>{
         portfolio.displayPopup(i)
     }
-    portfolioPiece.style.backgroundImage = `url(${thumbpics[i]})`;
+    portfolioPiece.style.backgroundImage = `url(${portfolio.projects[i].img})`;
     portfolioPiece.appendChild(thumbnailTitle);
     portfolioPiece.appendChild(thumbnailDescript);
     portfolioArea.appendChild(portfolioPiece)
