@@ -39,13 +39,19 @@ const portfolio = {
             name: "DVD Rental Site",
             description: "This unnamed website was a group project that I had create as part of a group for a class project at IUPUI. The project entailed created a Model-View-Controller (MVC) structured website in PHP that could perform CRUD functionality. Users could create an account, browse through DVDs, look at individual DVDs, and perform rental actions if a DVD was in stock. There were separate functionalities for admin accounts that were blocked to regular users.",
             img: "./images/dvdRental.PNG",
-            link: ""
+            link: "https://github.com/BradVS/I211-Final_Project"
         },
         {
             name: "Dodger",
             description: "This Python project was a group project that I had created as a part of a class at Indiana University, Bloomington. The game is a simple, arcade style coin collector, where the player must avoid falling hazards as they try to collect as many coins as possible and achieve a high score.",
             img: "./images/dodger.PNG",
             link: ""
+        },
+        {
+            name: "Expense Tracker",
+            description: "This project was created as part of my Android App development class. The purpose of the app is for the user to create and save expenses to a local SQLite database on their device. The expenses hold various values including a name, date, category, and money value. Users can then use this app to look through expenses, and filter based on various search parameters.",
+            img: "",
+            link: "https://github.com/BradVS/Expense_Tracker_App"
         }
     ],
     displayPopup(input){

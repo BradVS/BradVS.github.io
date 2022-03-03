@@ -1,6 +1,7 @@
 #about{
     background-color: $offWhite;
-    // height: 100%;
+    padding: 5px;
+    min-height: 50vh;
 
     .about__area{
         display: flex;
@@ -57,7 +58,7 @@
     }
 
     @media only screen and (max-width: 960px){
-        height: 120%;
+        max-height: 100%;
 
         .about__area{
             flex-direction: column-reverse;
@@ -73,6 +74,6 @@
     }
 
     @media only screen and (max-width: 760px){
-        height: 160%;
+        max-height: 150%;
     }
 }
